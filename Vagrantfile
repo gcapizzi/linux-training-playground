@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
 
     modprobe veth
 
-    sed -i 's/^GRUB_TIMEOUT=.*/GRUB_TIMEOUT=60/' /etc/default/grub
+    sed -i 's/^GRUB_TIMEOUT=.*/GRUB_TIMEOUT=10/' /etc/default/grub
     update-grub
 
     wget https://dl.google.com/go/go1.13.4.linux-amd64.tar.gz
