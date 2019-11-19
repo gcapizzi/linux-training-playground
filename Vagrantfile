@@ -4,11 +4,11 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "debian/contrib-testing64"
 
-   config.vm.provider "virtualbox" do |vb|
-     vb.gui = true
-     # vb.memory = "1024"
-     vb.customize ['setextradata', :id, 'GUI/ScaleFactor', '2']
-   end
+  config.vm.provider "virtualbox" do |vb|
+    vb.gui = true
+    # vb.memory = "1024"
+    vb.customize ['setextradata', :id, 'GUI/ScaleFactor', '2']
+  end
 
   config.vm.provision "shell", inline: <<-SHELL
     export DEBIAN_FRONTEND=noninteractive
