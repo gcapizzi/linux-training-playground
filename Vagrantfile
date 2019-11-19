@@ -14,7 +14,6 @@ Vagrant.configure("2") do |config|
     export DEBIAN_FRONTEND=noninteractive
     apt-get update
     apt-get -y upgrade
-    apt-get -y dist-upgrade
     apt-get install -y libseccomp-dev libcap-dev libacl1-dev libselinux-dev libcap-ng-utils
 
     modprobe veth
