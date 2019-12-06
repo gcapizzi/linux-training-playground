@@ -17,12 +17,14 @@ Vagrant.configure("2") do |config|
     apt-get install -y \
       build-essential \
       libacl1-dev \
+      libcap2-bin \
       libcap-dev \
       libcap-ng-utils \
       libseccomp-dev \
       libselinux-dev \
       moreutils \
       ntp \
+      strace \
       vim
 
     modprobe veth
