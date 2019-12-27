@@ -25,7 +25,8 @@ Vagrant.configure("2") do |config|
       moreutils \
       ntp \
       strace \
-      vim
+      vim \
+      inotify-tools
 
     modprobe veth
 
